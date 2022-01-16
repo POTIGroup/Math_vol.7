@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" , type="text/css" , href="../assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+	<title>空間図形</title>
+</head>
+
+<body>
+	<progress max="100" , value="0"></progress>
+	
+	<div class="container">
+		<h1 class="title">空間図形での利用</h1>
+
+		<h2>対角線の長さ</h2>
+
+		<p>三平方の定理が使えるのは<strong>直角三角形</strong>です。</p>
+		<p>定理を利用する場合は、図から直角三角形を探すか、補助線をかいて<strong>直角三角形をつくる</strong>必要があります。</p>
+		<p>立体は切断したり、展開したりして、できる限り<strong>平面で</strong>考えます。</p>
+		<p>下の問題をもとに解説します。</p>
+		<div class="block">
+			<div>
+				<p>問題 :</p>
+				<p class="question">対角線BHの長さを求めなさい。</p>
+			</div>
+		</div>
+		<div class="image">
+			<div>
+				<svg viewBox="140 20 180 150" width="180" height="150" xmlns="http://www.w3.org/2000/svg", class="medium"><polyline id="Polyline27_11" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="180,60 220,70 280,50 240,40 180,60 180,140 220,150 280,130 280,50 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polyline><g stroke-dasharray="3 2"><polyline id="Polyline27_13" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="240,40 240,120 280,130 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polyline><polyline id="Polyline27_14" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="180,140 240,120 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polyline></g><text id="Text27_15" x="236" y="33" font-size="15">A</text><text id="Text27_16" x="168" y="61" font-size="15">B</text><text id="Text27_17" x="222" y="84" font-size="15">C</text><text id="Text27_18" x="284" y="50" font-size="15">D</text><text id="Text27_19" x="245" y="115" font-size="15">E</text><text id="Text27_20" x="166" y="150" font-size="15">F</text><text id="Text27_21" x="216" y="165" font-size="15">G</text><text id="Text27_22" x="281" y="140" font-size="15">H</text><polygon id="sankakuBFH" style="fill: red; stroke: black; fill-opacity: 0.4; --darkreader-inline-fill:#d75d53; --darkreader-inline-stroke:#fffff1;" points="180,60 280,130 180,140 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polygon><polyline id="Polyline27_12" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="220,70 220,150 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polyline><path id="Arc27_24" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 180,60 A 72 72 0 0 0 170,90" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_25" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 170,110 A 72 72 0 0 0 180,140" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_26" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 180,140 A 58 58 0 0 0 188,150" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_28" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 206,156 A 64 64 0 0 0 220,150" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_29" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 220,150 A 67 67 0 0 0 242,150" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_30" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 266,141 A 67 67 0 0 0 280,130" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><text id="Text27_31" x="145" y="104" font-size="15">5cm</text><text id="Text27_32" x="252" y="157" font-size="15">4cm</text><text id="Text27_33" x="178" y="164" font-size="15">3cm</text></svg>
+			</div>
+		</div>
+		<p>まずは、底面<i>EFGH</i>を平面に描き出し、直角三角形<i>FGH</i>で三平方の定理を使うと</p>
+		<div class="block">
+			<div>
+				<p><i>FH²=3²+4²</i></p>
+				<p><i>FH²=25</i></p>
+				<p><i>FH=±5</i></p>
+				<p><i>FH > 0</i>より</p>
+				<p><strong><i>FH=5cm</i></strong></p>
+			</div>
+		</div>
+		<div class="image">
+			<div>
+				<svg id="s2" viewBox="140 60 160 110" width="160" height="110" xmlns="http://www.w3.org/2000/svg", class="medium"><polygon id="Polygon27_34" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="180,80 180,140 260,140 260,80 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polygon><text id="Text27_35" x="166" y="86" font-size="15">F</text><text id="Text27_36" x="163" y="148" font-size="15">G</text><text id="Text27_37" x="263" y="149" font-size="15">H</text><text id="Text27_38" x="263" y="84" font-size="15">E</text><polygon id="Polygon27_40" style="fill: blue; fill-opacity: 0.4; stroke: none; --darkreader-inline-fill:#809fd6; --darkreader-inline-stroke:none;" points="180,80 260,140 180,140 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polygon><line x1="180" y1="80" x2="260" y2="140" id="Line27_39" style="stroke: red; --darkreader-inline-stroke:#d75d53;" data-darkreader-inline-stroke=""></line><path id="Arc27_41" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 180,80 A 50 50 0 0 0 174,100" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_42" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 174,121 A 50 50 0 0 0 180,140" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_43" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 180,140 A 64 64 0 0 0 208,149" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_44" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 233,149 A 72 72 0 0 0 260,140" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><text id="Text27_45" x="148" y="118" font-size="15">3cm</text><text id="Text27_46" x="215" y="162" font-size="15">4cm</text></svg>
+			</div>
+		</div>
+		<p>次に直方体を面<i>BFHD</i>で切断した面を平面に描き出し、直角三角形<i>BFH</i>で三平方の定理を使うと、</p>
+		<div class="block">
+			<div>
+				<p><i>BH²=5²+5²</i></p>
+				<p><i>BH²=50</i></p>
+				<p><i>BH=±5√2</i></p>
+				<p><i>BH>0</i>より</p>
+				<p><strong><i>BH=5√2</i></strong></p>
+			</div>
+		</div>
+		<div class="image">
+			<div>
+				<svg id="s3" viewBox="180 60 160 130" width="160" height="130" xmlns="http://www.w3.org/2000/svg"><polygon id="Polygon27_48" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="220,80 220,160 300,160 300,80 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polygon><text id="Text27_49" x="210" y="80" font-size="15">B</text><text id="Text27_50" x="210" y="169" font-size="15">F</text><text id="Text27_51" x="301" y="77" font-size="15">D</text><text id="Text27_52" x="301" y="173" font-size="15">H</text><polygon id="Polygon27_54" style="fill: red; fill-opacity: 0.4; stroke: none; --darkreader-inline-fill:#d75d53; --darkreader-inline-stroke:none;" points="220,80 220,160 300,160 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polygon><line x1="220" y1="80" x2="300" y2="160" id="Line27_53" style="fill: none; stroke: red; --darkreader-inline-fill:none; --darkreader-inline-stroke:#d75d53;" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></line><path id="Arc27_55" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 220,80 A 64 64 0 0 0 210,100" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_56" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 210,140 A 72 72 0 0 0 220,160" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_57" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 220,160 A 64 64 0 0 0 240,170" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc27_58" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 280,170 A 72 72 0 0 0 300,160" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><text id="Text27_59" x="187" y="124" font-size="15">5cm</text><text id="Text27_60" x="248" y="181" font-size="15">5cm</text></svg>
+			</div>
+		</div>
+		<p>となり、対角線<i>BH</i>の長さは<i>5√2</i>となります。</p>
+		<div class="block">
+			<div>
+				<p>直方体の対角線の公式 :</p>
+				<p><i>a×b×c</i>の直方体の対角線の長さは</p>
+				<p><strong><i>√<span class="rooot">a²+b²+c²</span></i></strong></p>
+			</div>
+		</div>
+
+		<h2>円錐の体積</h2>
+
+		<div class="block">
+			<div>
+				<p><strong>錐の体積＝低面積×高さ÷３</strong></p>
+				<p>母線の長さと底面の半径が分かっている円錐では、三平方の定理で高さを出せば体積を出すことができる。</p>
+			</div>
+		</div>
+
+		<div class="block">
+			<div>
+				<p>問題</p>
+				<p class="question">母線の長さ17cm、底面の半径8cmの円錐の体積を求めなさい。</p>
+			</div>
+		</div>
+		<div class="image">
+			<div>
+				<svg viewBox="100 80 190 190" width="190" height="190" xmlns="http://www.w3.org/2000/svg"><path style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 120,240 A 80 20 0 0 0 280,240" id="Arc215_2" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><line x1="120" y1="240" x2="200" y2="90" id="Line15_3" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></line><line x1="200" y1="90" x2="280" y2="240" id="Line15_4" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></line><g stroke-dasharray="3 2"><path style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 280,240 A 80 20 0 0 0 120,240" id="Arc215_7" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path></g><line x1="120" y1="240" x2="200" y2="240" id="Line15_8" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></line><path id="Arc15_10" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 120,240 A 126 126 0 0 0 147,245" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc15_11" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 172,246 A 126 126 0 0 0 200,240" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc15_12" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 200,90 A 174 174 0 0 0 156,131" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc15_13" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 123,188 A 170 170 0 0 0 120,240" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><text id="Text15_14" x="120" y="162" font-size="12">17cm</text><text id="Text15_15" x="151" y="254" font-size="12">8cm</text></svg>
+			</div>
+		</div>
+		<p>頂点を通り、底面に垂直な平面で円錐を切断すると、<strong>切断面は二等辺三角形</strong>になります。</p>
+		<div class="image">
+			<div>
+				<svg id="s5" viewBox="100 80 190 180" width="190" height="180" xmlns="http://www.w3.org/2000/svg"><path id="Arc15_10" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 120,240 A 126 126 0 0 0 147,245" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc15_11" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 172,246 A 126 126 0 0 0 200,240" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc15_12" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 200,90 A 174 174 0 0 0 156,131" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc15_13" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 123,188 A 170 170 0 0 0 120,240" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><text id="Text15_14" x="120" y="162" font-size="12">17cm</text><text id="Text15_15" x="151" y="254" font-size="12">8cm</text><polygon id="Polygon15_16" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="200,90 120,240 280,240 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polygon><g stroke-dasharray="3 2"><line x1="200" y1="90" x2="200" y2="240" id="Line15_17" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></line></g><polyline id="Polyline15_18" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" points="200,230 190,230 190,240 " data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></polyline><path id="Arc15_19" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 210,140 A 156 156 0 0 0 200,90" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><path id="Arc15_20" style="fill: none; stroke: black; --darkreader-inline-fill:none; --darkreader-inline-stroke:#fffff1;" d="M 200,240 A 161 161 0 0 0 210,180" data-darkreader-inline-fill="" data-darkreader-inline-stroke=""></path><text id="Text15_21" x="209" y="164" font-size="12">h</text></svg>
+			</div>
+		</div>
+		<p>この二等辺三角形の高さが<strong>円錐の高さ</strong>になるので、</p>
+		<div class="block">
+			<div>
+				<p>三平方の定理より</p>
+				<p><i>17²=8²+h²</i></p>
+				<p><i>h²=289-64</i></p>
+				<p><i>h²=225</i></p>
+				<p><i>h=±15</i></p>
+				<p><i>h>0</i>より</p>
+				<p><i>h=15</i>よって</p>
+				<p>体積＝<i>8×8×π×15÷3=320π</i></p>
+			</div>
+		</div>
+		<p>となり、体積は320πcm³となります。</p>
+
+		<h2>四角錐の体積</h2>
+
+		<div class="block">
+			<div>
+				<p>問題</p>
+				<p class="question">底面が1辺12cmの正方形で、他の辺が15cmの正四角錐OABCDの体積を求めなさい。</p>
+			</div>
+		</div>
+
+		<p>点<i>O</i>、<i>A</i>、<i>C</i>を通る平面で切断すると、切断面の<i>△OAC</i>は二等辺三角形になります。</p>
+		<p>辺<i>AC</i>は底面の正方形<i>ABCD</i>の対角線なので、三平方の定理により</p>
+		<div class="block">
+			<div>
+				<p><i>AC²=12²+12²</i></p>
+				<p><i>AC²=288</i></p>
+				<p><i>AC=±12√2</i></p>
+				<p><i>AC>0</i>より</p>
+				<p><strong><i>AC=12√2</i></strong></p>
+			</div>
+		</div>
+		<p><i>△OAC</i>で、<i>O</i>から<i>AC</i>に引いた垂線を<i>OM</i>とすると、これが四角錐の高さになる。</p>
+		<p>辺<i>AM</i>は辺<i>AC</i>の<i>2/1</i>なので<i>AM=6√2</i>。</p>
+		<p><i>△OAM</i>で三平方の定理を使うと</p>
+		<div class="block">
+			<div>
+				<p><i>15²=OM²+(6√2)²</i></p>
+				<p><i>OM²=225-72</i></p>
+				<p><i>OM²=153</i></p>
+				<p><i>OM=±3√17</i></p>
+				<p><i>OM>0</i>より</p>
+				<p><i>OM=3√17</i>よって、</p>
+				<p>高さ＝<i>3√17</i></p>
+				<p>底面積＝<i>12×12=144</i></p>
+				<p>体積＝<i>底面積×高さ÷３</i></p>
+				<p><i>= 144×3√17÷3</i></p>
+				<p><strong><i>= 144√17 cm³</i></strong></p>
+			</div>
+		</div>
+
+		<h2>正四面体の体積</h2>
+
+		<div class="block">
+			<div>
+				<p>問題</p>
+				<p class="question">1辺6cmの正四面体の体積を求めなさい。</p>
+			</div>
+		</div>
+
+		<p>辺<i>BC</i>の中点<i>M</i>と頂点<i>A</i>、<i>D</i>を通る平面で、正四面体を2つの三角錐<i>BAMD</i>と<i>CAMD</i>に分ける。</p>
+		<p><i>AM⊥BC</i>、<i>DM⊥BC</i>なので、面<i>AMD</i>と辺<i>BC</i>は垂直となります。</p>
+		<p>すると、それぞれの三角錐で<i>△AMD</i>を底面とすると、<i>BAMD</i>の高さは<i>BM</i>、<i>CAMD</i>の高さは<i>CM</i>で、<i>M</i>が<i>BC</i>の中点なので<i>BM=CM=3</i>となります。</p>
+		<p>辺<i>AM</i>は側面の正三角形<i>ABC</i>の点<i>A</i>から辺<i>BC</i>の中点<i>M</i>を結んだ線です。</p>
+		<p><i>△ABM</i>は<i>30°</i>、<i>60°</i>、<i>90°</i>の直角三角形なので、<i>AB:BM:AM=2:1:√3</i>より<i>AM=3√3cm</i>となります。</p>
+		<p>同様に、<i>DM</i>も側面の正三角形<i>DBC</i>の<i>D</i>と<i>M</i>を結んだ線なので</p>
+		<div class="block">
+			<div>
+				<p><i>DM=3√3cm</i></p>
+			</div>
+		</div>
+		<p>となります。</p>
+		<p>すると、<i>△AMD</i>は<i>AM=DM=3√3</i>の二等辺三角形になります。</p>
+		<p>頂点<i>M</i>から<i>AD</i>に垂線<i>MN</i>をおろすと<i>N</i>は<i>AD</i>の中点なので<i>AN=3</i></p>
+		<div class="block">
+			<div>
+				<p>三平方の定理より</p>
+				<p><i>AM²=MN²+AN²</i></p>
+				<p><i>MN²+3²=(3√3)²</i></p>
+				<p><i>MN²=18</i></p>
+				<p><i>MN>0</i>より<i>MN=3√2</i></p>
+				<p>よって<i>△AMD</i>の面積＝<i>6×3√2÷2=9√2</i></p>
+			</div>
+		</div>
+		<p>三角錐<i>BAMD</i>の体積は</p>
+		<div class="block">
+			<div>
+				<p>底面 <i>△AMD=9√2cm²
+	</div>
+	
+	<script src="../assets/js/animation.js"></script>
+</body>
+
+</html>

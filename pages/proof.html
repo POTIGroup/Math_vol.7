@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" , type="text/css" , href="../assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+	<title>証明</title>
+</head>
+
+<body>
+	<progress max="100" , value="0"></progress>
+	
+	<div class="container">
+		<h1 class="title">三平方の定理の証明</h1>
+
+		<p>三平方の定理にはたくさんの証明があります。</p>
+		<p>その中での有名な証明を２つ解説します。</p>
+
+		<h2>1. 直角三角形を４つ重ねて正方形をつくる</h2>
+
+		<p>まずは、最もオーソドックスな方法です。</p>
+		<div class="image">
+			<img src="../src/image/proof/1.png" , class="small"></img>
+		</div>
+		<p><strong>証明</strong></p>
+		<p>図のように、合同な直角三角形を４つ用意すると、正方形が２つできます。</p>
+		<p>よって、できた図形すべての面積<i>S</i>を２通りの方法で表すことができます。</p>
+		<p>まず、<strong>１辺の長さが<i>a+b</i>の正方形</strong>として見れば、</p>
+		<div class="block">
+			<div>
+				<p><i>S = (a+b)²</i> ... ①</p>
+			</div>
+		</div>
+		<p>次に、<strong>１辺の長さが<i>c</i>の正方形と、赤色の直角三角形４つの合計</strong>として見れば、</p>
+		<div class="block">
+			<div>
+				<p><i>S = c²+4×1/2ab</i></p>
+				<p><i>= c²+2ab</i> ... ②</p>
+			</div>
+		</div>
+		<p>①、②の連立方程式より、</p>
+		<div class="block">
+			<div>
+				<p><i>(a+b)² = c²+2ab</i></p>
+			</div>
+		</div>
+		<p>左辺を展開すると、</p>
+		<div class="block">
+			<div>
+				<p><i>a²+2ab+b²<br><br>= c²+2ab</i></p>
+			</div>
+		</div>
+		<p>両辺から<i>2ab</i>を引くと、</p>
+		<div class="block">
+			<div>
+				<p><i>a²+b²=c²</i></p>
+			</div>
+		</div>
+		<p><strong>証明終了</strong></p>
+		<p><strong>面積を２通りの方法で表す</strong>という手法は、図形の性質の証明でよく使います。</p>
+		<p>その表し方は多岐にわたりますが、頭に入れておくといいでしょう</p>
+
+		<h2>2. 直角三角形を２つ重ねて台形をつくる</h2>
+
+		<div class="image">
+			<img src="../src/image/image823.png" , class="small">
+		</div>
+		<p><strong>証明</strong></p>
+		<p>図のように、合同な直角三角形を２つ用意すると、台形が１つできます。</p>
+		<p>よって、できた図形すべての面積<i>S</i>を２通りの方法で表すことができます。</p>
+		<p>まずは、<strong>上底<i>a</i>、下底<i>b</i>の台形</strong>として見れば、</p>
+		<div class="block">
+			<div>
+				<p><i>S = (a+b)×(a+b)÷2</i></p>
+				<p><i>= 1/2(a+b)²</i> ... ①</p>
+			</div>
+		</div>
+		<p>次に、<strong>青色の直角三角形１つと赤色の直角三角形２つの合計</strong>として見れば、</p>
+		<div class="block">
+			<div>
+				<p><i>S = 1/2c²+2×1/2ab</i></p>
+				<p><i>= 2/1c²+ab</i> ... ②</p>
+			</div>
+		</div>
+		<p>①、②の連立方程式より、</p>
+		<div class="block">
+			<div>
+				<p><i>1/2(a+b)² = 1/2c²+ab</i></p>
+			</div>
+		</div>
+		<p>両辺を２倍すると、</p>
+		<div class="block">
+			<div>
+				<p><i>(a+b)² = c²+2ab</i></p>
+			</div>
+		</div>
+		<p><strong>証明終了</strong></p>
+		<p>これは１つ目に紹介した証明で登場した式と同じです。</p>
+
+		<h2>おまけ</h2>
+
+		<p>三平方の定理の証明を解説しましたが、三平方の定理の証明は実は現在、<strong>１２２個</strong>見つかっています。</p>
+		<p>これが、全証明が載っているサイトです。</p>
+		<a class="block" , href="http://www.cut-the-knot.org/pythagoras/">
+			<div>
+				<p>ピタゴラスの定理とその多くの証明</p>
+			</div>
+		</a>
+	</div>
+	
+	<script src="../assets/js/animation.js"></script>
+</body>
+
+</html>

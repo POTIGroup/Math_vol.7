@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" , type="text/css" , href="../assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+	<title>２点間の距離</title>
+</head>
+
+<body>
+	<progress max="100" , value="0"></progress>
+	
+	<div class="container">
+		<h1 class="title">２点間の距離</h1>
+
+		<h2>ポイント</h2>
+
+		<p>次の図のように、左右に伸びる直線を<i>x</i>軸とし、上下に伸びる直線を<i>y</i>軸として、点の位置を<i>(x, y)</i>で表す平面を<strong>座標平面</strong>といいます。</p>
+		<div class="img">
+			<img src="../src/image/image02.png" , class="medium"></img>
+		</div>
+		<h2>解き方</h2>
+		<p>座標平面上に、２点<i>A</i>、<i>B</i>があるとき、線分<i>AB</i>の長さを<strong>２点間の距離</strong>と呼びます。</p>
+		<div class="image">
+			<img src="../src/image/image03.png" , class="medium"></img>
+		</div>
+		<p>点<i>A</i>、<i>B</i>の座標をそれぞれ点<i>A(x₁, y₁)</i>、点<i>B(x₂, y₂)</i>とおくとき、線分<i>AB</i>の長さ、<strong>２点間の距離</strong>には次のような公式が成り立ちます。</p>
+		<div class="image">
+			<img src="../src/image/image04.png" , class="medium"></img>
+		</div>
+		<p>この公式は、<strong>三平方の定理</strong>がもとであることを意識しましょう。</p>
+		<p>線分<i>AB</i>を直角三角形の斜辺と見立てると、次のようになります。</p>
+		<div class="image">
+			<img src="../src/image/image05.png" , class="medium"></img>
+		</div>
+		<p>直角三角形において、底辺<i>(x₂-x₁)</i>、高さ<i>(y₂-y₁)</i>なので、三平方の定理により、<br><i>AB² = (x₂-x₁)²+(y₂-y₁)²</i><br>が成り立ちます。</p>
+		<p>公式を文字として丸暗記するのではなく、<strong>直角三角形の斜辺</strong>をイメージすると立式しやすくなります。</p>
+	</div>
+
+	<script src="../assets/js/animation.js"></script>
+</body>
+
+</html>

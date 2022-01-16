@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet", type="text/css", href="../assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+	<title>立体での最短距離</title>
+</head>
+
+<body>
+	<progress max="100" , value="0"></progress>
+	
+	<div class="container">
+		<h1 class="title">立体での最短距離</h1>
+		
+		<h2>直方体 / 立方体</h2>
+		
+		<div class="block">
+			<div>
+				<p>問題 :</p>
+				<p class="question">頂点<i>B</i>から線分<i>CF</i>を通って頂点<i>G</i>までひもをかける。</p>
+				<p class="question">このとき、ひもが最短となるのときの長さを求めなさい。</p>
+			</div>
+		</div>
+		<div class="image">
+			<img src="../src/image/ppp.png", class="medium">
+		</div>
+		<p>空間図形のままでは、ひもの長さを考えるのが難しいです。</p>
+		<p>なので、ひもが通っているところの展開図をかいて、<strong>平面で考えて</strong>いきます。</p>
+		<p><strong>ひもが通っている面だけ</strong>を展開図にして考えます。</p>
+		<div class="image">
+			<img src="../src/image/path4557.png" class="medium">
+		</div>
+		<p>これで考えやすくなりました。</p>
+		<p>そして、ひもが最短になるのは、</p>
+		<p>赤線部分のように、点と点を<strong>直線で結んだときの長さ</strong>になります。</p>
+		<p>よって、ひもの最短距離は展開図での<i>BG</i>の長さと同じになります。</p>
+		<h3>・長さを求める</h3>
+		<p>あとは、三平方の定理を使って長さを求めます。</p>
+		<div class="block">
+			<div>
+				<p>三平方の定理より</p>
+				<p><i>BG²=BE²+EG²</i></p>
+				<p><i>BG²=3²+6²</i></p>
+				<p><i>BG²=45</i></p>
+				<p><strong><i>BG=3√5</i></strong></p>
+			</div>
+		</div>
+		<p>よって、ひもの最短距離は<i>3√5cm</i>となりました。</p>
+		<h3>・ポイント</h3>
+		<p>これのポイントは、<strong>展開図をかいて直線で結んだときの長さと等しい</strong>ということです。</p>
+		<p>このことをしっかりと覚えておきましょう。</p>
+		<h2>円錐</h2>
+		<div class="block">
+			<div>
+				<p>問題 :</p>
+				<p class="question">底面の直径<i>AB</i>と母線の長さ<i>PA</i>について<i>AB=PA=4cm</i>の円錐がある。</p>
+				<p class="question">線分<i>PB</i>の中点<i>C</i>とする。</p>
+				<p class="question">図のように、この円錐の表面に、点<i>A</i>から点<i>C</i>まで、ひもを緩めないようにかける。</p>
+				<p class="question">ひもの長さが最も短くなるとき、その長さを求めなさい。</p>
+			</div>
+		</div>
+		<div class="image">
+			<img src="../src/image/entyu.png" class="small">
+		</div>
+		<p>円錐のときも同じように展開図を書いて考えます。</p>
+		<p>ですが、円錐の場合には、展開図をかくにあたって、側面であるおうぎ形の<strong>中心角を求める</strong>必要があります。</p>
+		<p>中心角の求め方は、この公式を利用します。</p>
+		<div class="block">
+			<div>
+				<p><strong><i>中心角＝半径/母線×360</i></strong></p>
+			</div>
+		</div>
+		<p>今回の問題では、中心角は</p>
+		<div class="block">
+			<div>
+				<p><i>2/4×360=180°</i></p>
+			</div>
+		</div>
+		<p>となります。</p>
+		<p>よって、展開図はこうなり、求める長さが赤線部分となります。</p>
+		<div class="image">
+			<img src="../src/image/path4542.png", class="small">
+		</div>
+		<h3>・長さを求める</h3>
+		<p>では、三平方の定理を使って長さを求めましょう。</p>
+		<div class="block">
+			<div>
+				<p>三平方の定理より</p>
+				<p><i>AC²=AP²+AC²</i></p>
+				<p><i>AC²=4²+2²</i></p>
+				<p><i>AC²=20</i></p>
+				<p><strong><i>AC=2√5</i></strong></p>
+			</div>
+		</div>
+		<p>よって、ひもの最短距離は<i>2√5cm</i>となりました。</p>
+		<h3>・ポイント</h3>
+		<p>円錐の場合には、展開図をかくために、側面であるおうぎ形の<strong>中心角を求める</strong>必要があります。</p>
+		<p>中心角の大きさによって展開図の形が大きく異なってくるので注意です。</p>
+		
+		<h2>まとめ</h2>
+		<p>ひもが最短となる問題を考えるときは、</p>
+		<p><strong>展開図をかいて、直線で結ぶ！</strong></p>
+		<p>これが大切なポイントとなります。</p>
+		
+		<footer>
+			<div id="button">
+				<ion-icon name="arrow-back"></ion-icon>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="../assets/js/animation.js"></script>
+</body>
+
+</html>
